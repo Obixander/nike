@@ -1,0 +1,369 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+
+
+header {
+   display: flex;
+   background-color: orange;
+}
+
+header img {
+   padding-top: 1%;
+   padding-left: 5%;
+   width: 100px;
+   height: 50px;
+}
+
+.mobile {
+   z-index: 99;
+   /* position: absolute; */
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+   padding-bottom: 2%;
+}
+
+
+.mobile ul {
+   list-style-type: none;
+
+}
+
+.nike-logo {
+   z-index: 100;
+}
+
+/* Hamburger menu */
+.close {
+   display: none;
+   z-index: 98;
+}
+
+.checkbox {
+   /* position: relative;
+   opacity: 0;
+   left: 33%;
+   width: 75px;
+   z-index: 100; */
+   display: none;
+}
+
+.mobile ul {
+   display: none;
+}
+
+.checkbox:checked ~ul {
+   padding-top: 5%;
+   display: block;
+   position: absolute;
+z-index: 10;
+   top: 7%;
+   background-color: orange;
+   width: 100%;
+height: 550vh;
+text-align: center;
+}
+
+.checkbox:checked ~ ul li {
+   padding-bottom: 1.5em;
+   
+}
+
+
+.checkbox:checked ~ ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.2em;
+}
+
+.checkbox:checked ~ .open {
+   display: none;
+}
+
+.checkbox:checked ~ .close {
+   display: block;
+}
+
+.checkbox:checked {
+   
+}
+/* Forside Styling */
+
+/* forside image */
+.forside-image {
+   width: 100%;
+}
+
+.images-section {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.image-section {
+   text-align: center;
+   padding-bottom: 10%;
+}
+
+article {
+   padding-top: 3%;
+   padding-bottom: 3%;
+}
+
+/* footer */
+footer {
+   background-color: orange;
+   padding: 1.2em;
+   color: white;
+}
+
+footer h3 {
+   padding-bottom: 0.3em;
+}
+footer h4 {
+   padding-top: 0.4em;
+   padding-bottom: 0.4em;
+}
+
+.footer-middle {
+   padding-top: 0.4em;
+}
+
+.footer-middle-fh {
+   padding-bottom: 1em;
+}
+
+.footer-right {
+   padding-top: 0.5em;
+}
+
+.footer-right-images {
+   padding-top: 0.4em;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+footer a {
+   color: white;
+}
+
+.footer-right-links {
+   padding-top: 0.6em;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+/* historien om nike side */
+
+.cortez-image {
+   width: 100%;
+   padding-top: 0.7em;
+   padding-bottom: 0.7em;
+}
+
+h2 {
+   padding-bottom: 0.7em;
+}
+article h3 {
+   padding-bottom: 0.7em;
+   padding-top: 0.7em;
+}
+
+/* Om Nike */
+
+.nike-shop {
+   padding-top: 0.7em;
+   width: 100%;
+}
+.om-nike-p-middle {
+   padding-bottom: 2em;
+}
+.om-nike-p-middle p {
+   padding-bottom: 0.7em;
+}
+
+.om-nike-middle-article-div-p p{
+padding-bottom: 1em;
+}
+
+.om-nike-h2 {
+   padding-top: 0.7em;
+}
+
+/* kundeservice */
+.kunde-img {
+   width: 100%;
+}
+
+.kontakt-text p{
+ padding-bottom: 0.7em;
+}
+
+.remember-p {
+   padding-top: 2em;
+}
+
+.desktop {
+   display: none;
+}
+
+.nike-logo-desktop {
+   display: none;
+}
+
+/* Desktop Styling */
+@media screen and (min-width: 1024px) {
+.mobile {
+   display: none;
+}
+
+.desktop  {
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+}
+
+header img {
+   padding-top: 1%;
+   padding-left: 5%;
+   width: 8%;
+   height: 50px;
+}
+
+.desktop ul {
+   position: relative;
+   display: flex;
+   list-style: none;
+   width: 108%;
+   /* left: 25%; */
+   transform: translate(-50% -50%);
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   justify-content: center;
+   margin-left: -8%;
+}
+
+.desktop ul li {
+   margin-left: 50px;
+} 
+
+.desktop ul li a{
+   text-decoration: none;
+
+}
+
+.nike-logo-desktop {
+display: block;
+}
+
+.nike-logo {
+   display: none;
+}
+
+.images-section {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   padding-top: 1.5em;
+}
+
+.image-section {
+   width: 33%;
+}
+
+.wrapper {
+   width: 75%;
+   margin: 0 auto;
+}
+
+footer {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.footer-right-images img {
+   width: 30%;
+}
+
+.historie-nike-split {
+   display: flex;
+   margin-top: 2em;
+   /* margin-bottom: 2em; */
+}
+
+.half {
+   width: 50%;
+}
+
+.cortez-image {
+   padding-top: 0;
+   padding-bottom: 0;
+}
+
+article {
+   padding-top: 1%;
+}
+
+.om-nike-first {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.nike-shop {
+   padding-top: 0;
+}
+.om-nike-text {
+   display: flex;
+   flex-direction: column;
+padding: 0.5em 1em 1em 1em;
+   width: 50%;
+   font-size: 15px;
+   margin-bottom: 0.5em;
+}
+
+
+.om-nike-p-middle p {
+   /* padding-bottom: 0em; */
+}
+
+.om-nike-middle {
+   display: flex;
+}
+
+.om-nike-middle-article-div-p {
+   width: 50%;
+}
+
+
+.om-nike-middle-article-div-img {
+   width: 50%;
+}
+
+.om-nike-last {
+   display: flex;
+   flex-direction: row;
+   padding-top: 2em;
+}
+
+.om-nike-text-last {
+   width: 50%;
+   padding: 0.5em;
+   font-size: 15px;
+}
+
+.kontakt-text {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.kontakt-text p {
+   padding-bottom: 2em;
+}
+
+}

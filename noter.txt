@@ -1,0 +1,10 @@
+1. Design mobile first
+2. forside først
+3. mobilheader
+4. mobilmenu/hamburger menu
+5. arbejd ned af hjemmesidem
+6. mobilfooter
+7. mobil sub pages
+8. destop forside
+9. destop sub pages
+
